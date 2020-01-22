@@ -1,0 +1,68 @@
+
+body {
+
+  font-family:TimesNewRomans;
+  background-color: #7FDBFF;
+}
+h2{
+  font-family: TimesNewRomans;
+  font-size: 1.3cm;
+  color: #0074D9;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+  background-color: #7FDBFF;
+}
+header::after{
+  content: '';
+  display: table;
+  clear:both;
+}
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.logo{
+  float: left;
+}
+nav li{
+  display: inline-block;
+  margin-left: 7px;
+  padding-top: 7px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover{
+  color: #000;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #444;
+
+  position: absolute;
+  top:0%;
+  width: 0%;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
