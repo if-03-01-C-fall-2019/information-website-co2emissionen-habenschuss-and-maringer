@@ -1,0 +1,57 @@
+Body {
+  font-family:TimesNewRomans;
+  text-align: left;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+h2{
+  font-size: 40px;
+}
+header::after{
+  content: '';
+  display: table;
+  clear:both;
+}
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 7px;
+  padding-top: 7px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-shadow: 3px 3px 4px #777;
+}
+
+nav a:hover{
+  color: #000;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #444;
+  top:0%;
+  width: 0%;
+}
+
+nav a:hover::before{
+  width: 100%;
+}

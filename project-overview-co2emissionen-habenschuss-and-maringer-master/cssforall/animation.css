@@ -1,0 +1,19 @@
+Head{
+}
+
+body
+{
+}
+
+h2 {
+  animation: textwelle 2s;
+}
+@keyframes textwelle {
+  0% {
+    font-size: 0;
+    opacity: 1;
+}
+  100% {
+    font-size: 40px;
+    opacity: 1;
+  }
